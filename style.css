@@ -2,23 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.site-header {
-    color: white;
-    padding: 0.5rem 0;
-    margin: 0;
+    background-color: #8e8e90;
+    color: #777070;
 }
 
 .site-nav {
-    background-color: #070707;
+    background-color: #bd8c7d;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0.5rem 1rem;
     margin: 0;
+    border-bottom: 2px solid #d1bfa7;
 }
 
 .nav-header {
@@ -26,16 +22,11 @@ body {
     align-items: center;
 }
 
-.site-logo {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1rem; /* Add some space between the logo and the nav links */
-}
 
 .nav-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto; /* Center the nav list */
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,8 +73,25 @@ body {
     display: grid;
 }
 
+.box {
+    background-color: #bd8c7d;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    color: transparent; /* Hide text */
+}
+
 .site-main {
     padding: 2rem;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    background-color: beige;
+    width: 60%;
+    height: 200vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    top: -50px; /* Move it up into the nav bar */
 }
 
 .content-section {
@@ -91,12 +99,16 @@ body {
     position: relative;
 }
 
+.sub-header {
+    font-size: 90%;
+}
 .site-footer {
-    background-color: #333;
+    background-color: #bd8c7d;
     color: white;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1em 0em 100px 0em;
+    position: flex;
+    height: 100%;
+    bottom: 100%;
+    z-index: -1;
 }
