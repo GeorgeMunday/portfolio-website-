@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.site-header {
+    color: white;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.site-nav {
+    background-color: #070707;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Add some space between the logo and the nav links */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the nav list */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    overflow-x: hidden;
+}
+
+.dropdown-link {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.nav-item:hover .dropdown-content {
+    display: grid;
+}
+
+.site-main {
+    padding: 2rem;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
